@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 //Components
 
@@ -19,6 +20,7 @@ import slider1 from './../../assets/images/photo-slider_1.png';
 import slider2 from './../../assets/images/photo-slider_2.png';
 import slider3 from './../../assets/images/photo-slider_3.png';
 import slider4 from './../../assets/images/photo-slider_4.png';
+import subscribe from '../../assets/images/blake-wisz-GFrBMipOd_E-unsplash.png';
 
 // stlyes
 
@@ -72,34 +74,30 @@ export const Home = () => {
                     </div>
                 </Slider>
             </section>
-            <section className="block_section arrivals">
+            <section className="collection_section">
                 <div className="container">
-                    <div className="row has_gutter">
+                    <div className="collection__wrapper"> 
                         <div className="column-6">
-                            <div className="box">
-                                <div className="box__thumb">
-                                    <img src={banner4} alt="" />
-                                </div>
-                                <div className="box__content">
-                                    <h3>New arrivals are now in!</h3>
-                                    <button>Show Collection</button>
-                                </div>
+                            <div className="collection__thumb">
+                                <img src={banner4} alt="img"/>
+                            </div>
+                            <div className="collection__content">
+                                <p>New arrivals are now in!</p>
+                                <Link to="/men"><span>Show recipes</span></Link>
                             </div>
                         </div>
                         <div className="column-6">
-                            <div className="box">
-                                <div className="box__thumb">
-                                    <img src={banner5} alt="" />
-                                </div>
-                                <div className="box__content">
-                                    <h3>Basic t-shirts $29,99</h3>
-                                    <button>More Details</button>
-                                </div>
+                            <div className="collection__thumb">
+                                <img src={banner5} className="banner5" alt="img"/>
+                            </div>
+                            <div className="collection__content">
+                                <p>New arrivals are now in!</p>
+                                <Link to="/men"><span>Show recipes</span></Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>  
             <section className="block_section favorite_section">
                 <div className="container">
                     <div className="main_title">
@@ -145,6 +143,18 @@ export const Home = () => {
                             </div>
                         </Slider>
                     </div>
+                </div>
+            </section>
+            <section className="subscribe">
+                <div className="container">
+                    <div className="subscribe__text">
+                        <h2>Subscribe to our newsletter and receive exclusive offers every week</h2>
+                        <form>
+                        <input type="email" className="subscribe_input" name="name" placeholder="Enter your email" />
+                        <button type="submit" className="subscribe_button">SUBSCRIBE</button>
+                        </form> 
+                    </div>
+                    <img src={subscribe} alt="img" />
                 </div>
             </section>
         </div>
