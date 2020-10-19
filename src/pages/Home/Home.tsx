@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Components
-
+import banner2 from './../../assets/images/home_banner.jpg';
 //styles
 import './Home.scss'
 
