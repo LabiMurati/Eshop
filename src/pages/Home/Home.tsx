@@ -2,7 +2,10 @@ import React from 'react'
 import Slider from "react-slick";
 
 //Components
-// import { ProductBox } from '../../components/ProductBox/ProductBox';
+
+import { ProductBox } from '../../components/ProductBox/ProductBox';
+
+
 
 //styles
 import './Home.scss'
@@ -12,6 +15,11 @@ import banner2 from './../../assets/images/Peja2.png';
 import banner3 from './../../assets/images/Peja3.png';
 import banner4 from './../../assets/images/banner4.png';
 import banner5 from './../../assets/images/banner5.png';
+import slider1 from './../../assets/images/photo-slider_1.png';
+import slider2 from './../../assets/images/photo-slider_2.png';
+import slider3 from './../../assets/images/photo-slider_3.png';
+import slider4 from './../../assets/images/photo-slider_4.png';
+
 // stlyes
 
 
@@ -36,7 +44,7 @@ const settingsFavorite = {
 export const Home = () => {
     return (
         <div className="Home">
-            <section className="block_section banner_section">
+             <section className="block_section banner_section">
                 <Slider {...settingsBanner}>
                     <div className="banner">
                         <img src={banner1} alt="banner1" />
@@ -64,7 +72,35 @@ export const Home = () => {
                     </div>
                 </Slider>
             </section>
-            {/* <section className="block_section favorite_section">
+            <section className="block_section arrivals">
+                <div className="container">
+                    <div className="row has_gutter">
+                        <div className="column-6">
+                            <div className="box">
+                                <div className="box__thumb">
+                                    <img src={banner4} alt="" />
+                                </div>
+                                <div className="box__content">
+                                    <h3>New arrivals are now in!</h3>
+                                    <button>Show Collection</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="column-6">
+                            <div className="box">
+                                <div className="box__thumb">
+                                    <img src={banner5} alt="" />
+                                </div>
+                                <div className="box__content">
+                                    <h3>Basic t-shirts $29,99</h3>
+                                    <button>More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="block_section favorite_section">
                 <div className="container">
                     <div className="main_title">
                         <h4>Your Favorite</h4>
@@ -77,7 +113,7 @@ export const Home = () => {
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
                                     price="79.99"
-                                    image={product1}
+                                    image={slider1}
                                 />
                             </div>
                             <div className="fav_product_slider_item">
@@ -86,7 +122,7 @@ export const Home = () => {
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
                                     price="79.99"
-                                    image={product1}
+                                    image={slider2}
                                 />
                             </div>
                             <div className="fav_product_slider_item">
@@ -95,7 +131,7 @@ export const Home = () => {
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
                                     price="79.99"
-                                    image={product1}
+                                    image={slider3}
                                 />
                             </div>
                             <div className="fav_product_slider_item">
@@ -104,54 +140,10 @@ export const Home = () => {
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
                                     price="79.99"
-                                    image={product1}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
-                                    image={product1}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
-                                    image={product1}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
-                                    image={product1}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
-                                    image={product1}
+                                    image={slider4}
                                 />
                             </div>
                         </Slider>
-                    </div>
-                </div>
-            </section> */}
-            <section className="block_section_two">
-                <div className="container">
-                <div className="column-6">
-                <img src={banner4} alt="banner4" />
-                <img src={banner5} alt="banner5"/>
                     </div>
                 </div>
             </section>
