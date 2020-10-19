@@ -6,7 +6,7 @@ import './ErrorPage.scss'
 export const ErrorPage = () => {
     return (
         <div className="ErrorPage">
-            <h1>Nothing found <b>404</b>!</h1>
+            <h1> Nothing to found on this page please select another page! <b>404</b>!</h1>
         </div>
     )
 }

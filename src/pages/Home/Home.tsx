@@ -9,7 +9,7 @@ import './Home.scss'
 
 import banner1 from './../../assets/images/home_banner.jpg';
 import banner2 from './../../assets/images/banner-2.png';
-// s
+// stlyes
 
 const settingsBanner = {
     dots: false,
