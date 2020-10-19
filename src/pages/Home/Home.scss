@@ -52,11 +52,11 @@
   &__content {
     width: 100%;
     position: absolute;
-    left: 0;
+    right: 110%;
     top: 50%;
     transform: translateY(-50%);
     h2 {
-      max-width: 640px;
+      max-width: 720px;
       font-size: 66px;
       font-weight: bold;
       line-height: 77px;

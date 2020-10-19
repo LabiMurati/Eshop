@@ -7,9 +7,12 @@ import Slider from "react-slick";
 //styles
 import './Home.scss'
 
-import banner1 from './../../assets/images/home_banner.jpg';
-import banner2 from './../../assets/images/banner-2.png';
+import banner1 from './../../assets/images/Peja1.png';
+import banner2 from './../../assets/images/Peja2.png';
+import banner3 from './../../assets/images/Peja3.png';
 // stlyes
+
+
 
 const settingsBanner = {
     dots: false,
@@ -37,7 +40,7 @@ export const Home = () => {
                         <img src={banner1} alt="banner1" />
                         <div className="banner__content">
                             <div className="container">
-                                <h2>Sale of the summer collection</h2>
+                                <h2>Gjithmonë më e mira</h2>
                             </div>
                         </div>
                     </div>
@@ -45,15 +48,15 @@ export const Home = () => {
                         <img src={banner2} alt="banner1" />
                         <div className="banner__content">
                             <div className="container">
-                                <h2>Sale of the spring collection</h2>
+                                <h2>Gjithmonë më e mira</h2>
                             </div>
                         </div>
                     </div>
                     <div className="banner">
-                        <img src={banner1} alt="banner1" />
+                        <img src={banner3} alt="banner1" />
                         <div className="banner__content">
                             <div className="container">
-                                <h2>Sale of the winter collection</h2>
+                                <h2>Gjithmonë më e mira</h2>
                             </div>
                         </div>
                     </div>
