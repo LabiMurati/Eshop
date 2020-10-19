@@ -10,6 +10,8 @@ import './Home.scss'
 import banner1 from './../../assets/images/Peja1.png';
 import banner2 from './../../assets/images/Peja2.png';
 import banner3 from './../../assets/images/Peja3.png';
+import banner4 from './../../assets/images/banner4.png';
+import banner5 from './../../assets/images/banner5.png';
 // stlyes
 
 
@@ -145,6 +147,14 @@ export const Home = () => {
                     </div>
                 </div>
             </section> */}
+            <section className="block_section_two">
+                <div className="container">
+                <div className="column-6">
+                <img src={banner4} alt="banner4" />
+                <img src={banner5} alt="banner5"/>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

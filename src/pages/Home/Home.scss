@@ -52,14 +52,14 @@
   &__content {
     width: 100%;
     position: absolute;
-    right: 110%;
+    left: 0%;
     top: 50%;
     transform: translateY(-50%);
     h2 {
-      max-width: 720px;
+      max-width: 420px;
       font-size: 66px;
       font-weight: bold;
-      line-height: 77px;
+      line-height: 97px;
       color: #fff;
     }
   }
@@ -70,4 +70,12 @@
 }
 .fav_product_slider_item {
   padding: 0 15px;
+}
+.column-6 {
+  width: 100%;
+  display: flex;
+  margin-top: 42px;
+  img {
+    margin-left: 30px;
+  }
 }
