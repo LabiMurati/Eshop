@@ -174,10 +174,8 @@
   .collection__thumb {
     img {
       position: absolute;
-      width: 641px;
+      width: 558px;
       height: 373px;
-      // margin-left: -15px;
-      // margin-right: -15px;
     }
   }
   .collection__content {
@@ -247,7 +245,6 @@
   height: 48px;
   right: 145px;
   top: 95px;
-  color: rgba($color: #000000, $alpha: 0.3);
   text-transform: uppercase;
   outline: none;
   font-weight: 700;
@@ -256,4 +253,9 @@
 }
 .subscribe_button :placeholder-shown {
   color: rgba($color: #000000, $alpha: 0.3);
+}
+.fav_product_slider_item {
+  title {
+    font-size: 18px;
+  }
 }

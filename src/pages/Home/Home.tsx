@@ -110,7 +110,7 @@ export const Home = () => {
                                     id="1"
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    price="$79.99"
                                     image={slider1}
                                 />
                             </div>
@@ -119,7 +119,7 @@ export const Home = () => {
                                     id="1"
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    price="$79.99"
                                     image={slider2}
                                 />
                             </div>
@@ -128,7 +128,7 @@ export const Home = () => {
                                     id="1"
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    price="$79.99"
                                     image={slider3}
                                 />
                             </div>
@@ -137,7 +137,7 @@ export const Home = () => {
                                     id="1"
                                     isBig
                                     title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    price="$79.99"
                                     image={slider4}
                                 />
                             </div>
