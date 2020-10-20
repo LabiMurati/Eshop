@@ -88,7 +88,8 @@ export const Home = () => {
                                 <img src={banner5} className="banner5" alt="img"/>
                             </div>
                             <div className="collection__content">
-                                <p>New arrivals are now in!</p>
+                                <p>Basic t-shirts $29,99</p>
+                                                   
                                 <Link to="/men"><span>Show  recipes</span></Link>
                             </div>
                         </div>
@@ -103,6 +104,7 @@ export const Home = () => {
                     <div className="favorite_slider">
                         <Slider {...settingsFavorite}>
                             <div className="fav_product_slider_item">
+                                <Link to="/src/pages/Singlepage/">
                                 <ProductBox
                                     id="1"
                                     isBig
@@ -110,6 +112,7 @@ export const Home = () => {
                                     price="$79.99"
                                     image={slider1}
                                 />
+                                </Link>
                             </div>
                             <div className="fav_product_slider_item">
                                 <ProductBox

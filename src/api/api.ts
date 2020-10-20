@@ -50,7 +50,7 @@ export interface FoodData {
 }
 
 export interface ResponseFoodProps extends AxiosResposne {
-    data?: FoodData
+    data?: FoodData;
 }
 
 

@@ -1,20 +1,20 @@
-// .Header {
-//   width: 100%;
-//   position: fixed;
-//   z-index: 9;
-//   left: 0;
-//   top: 0;
-//   .logo {
-//     width: 100px;
-//     margin-top: 30px;
-//   }
-//   &__wrap {
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// }
+.Header {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  .logo {
+    width: 100px;
+    margin-top: 30px;
+  }
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 // .nav_wrapper {
 //   margin-top: 30px;
 //   ul {
@@ -32,8 +32,6 @@
 //   }
 // }
 .t-shirt__text {
-  position: relative;
-  left: 110px;
   h2,
   span {
     font-size: 30px;
@@ -53,11 +51,10 @@
 
 .t-shirt {
   margin-top: 60px;
-  &text__area {
-    width: 100%;
-    display: flex;
-    img {
-      object-fit: cover;
-    }
-  }
+}
+.text__area {
+  margin-top: 157px;
+}
+.singlepagebanner {
+  padding-right: 110px;
 }

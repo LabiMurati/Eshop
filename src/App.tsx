@@ -17,6 +17,8 @@ import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 //Styles
 import './App.scss';
 import { Singlepage } from './pages/Singlepage/Singlepage';
+import { ProductFilters } from './pages/Product Filters/ProductFilters';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route  component={Singlepage} />
+          <Route  component={ProductFilters} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer />

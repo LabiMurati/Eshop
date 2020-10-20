@@ -8,7 +8,7 @@ import "./Header.scss"
 
 export const Header = () => {
     const history = useHistory()
-    const isHomePage = history.location.pathname === '/'; 
+    const isHomePage = history.location.pathname === '/Singlepage'; 
 
     return (
         <div className={`Header${isHomePage && ' Header--Home' }`}>
@@ -20,7 +20,7 @@ export const Header = () => {
                     <nav className="nav_wrapper">
                         <ul>
                             <li><Link to="/Singlepage">Alkoolike</Link></li>
-                            <li><Link to="/faqen tjt qitu e qet">Jo Alkoolike</Link></li>
+                            <li><Link to="/ProductFilters">Jo Alkoolike</Link></li>
                            
                         </ul>
                     </nav> 
