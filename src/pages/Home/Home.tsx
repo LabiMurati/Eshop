@@ -141,6 +141,42 @@ export const Home = () => {
                                     image={slider4}
                                 />
                             </div>
+                            <div className="fav_product_slider_item">
+                                <ProductBox
+                                    id="1"
+                                    isBig
+                                    title="Basic Slim Fit T-Shirt"
+                                    price="$79.99"
+                                    image={slider1}
+                                />
+                            </div>
+                            <div className="fav_product_slider_item">
+                                <ProductBox
+                                    id="1"
+                                    isBig
+                                    title="Basic Slim Fit T-Shirt"
+                                    price="$79.99"
+                                    image={slider2}
+                                />
+                            </div>
+                            <div className="fav_product_slider_item">
+                                <ProductBox
+                                    id="1"
+                                    isBig
+                                    title="Basic Slim Fit T-Shirt"
+                                    price="$79.99"
+                                    image={slider3}
+                                />
+                            </div>
+                            <div className="fav_product_slider_item">
+                                <ProductBox
+                                    id="1"
+                                    isBig
+                                    title="Basic Slim Fit T-Shirt"
+                                    price="$79.99"
+                                    image={slider4}
+                                />
+                            </div>
                         </Slider>
                     </div>
                 </div>

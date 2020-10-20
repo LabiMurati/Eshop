@@ -10,7 +10,6 @@ import instagram from './../../assets/images/instagram-footer.png';
 import youtube from './../../assets/images/youtube-footer.png';
 import icon from './../../assets/images/icon-footer.png';
 
-
 export const Footer = () => {
     return (
         <div className="Footer">
@@ -52,6 +51,7 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
+        
             <h5>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</h5>
         </div>
     )
