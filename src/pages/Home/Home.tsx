@@ -1,10 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-
 //Components
-
-import { ProductBox } from '../../components/ProductBox/ProductBox';
+    import { ProductBox } from '../../components/ProductBox/ProductBox';
 
 
 
@@ -42,7 +40,6 @@ const settingsFavorite = {
     slidesToShow: 4,
     slidesToScroll: 4
 };
-
 export const Home = () => {
     return (
         <div className="Home">
@@ -83,7 +80,7 @@ export const Home = () => {
                             </div>
                             <div className="collection__content">
                                 <p>New arrivals are now in!</p>
-                                <Link to="/men"><span>Show recipes</span></Link>
+                                <Link to="/men"><span>Show Collection</span></Link>
                             </div>
                         </div>
                         <div className="column-6">
@@ -92,7 +89,7 @@ export const Home = () => {
                             </div>
                             <div className="collection__content">
                                 <p>New arrivals are now in!</p>
-                                <Link to="/men"><span>Show recipes</span></Link>
+                                <Link to="/men"><span>Show  recipes</span></Link>
                             </div>
                         </div>
                     </div>

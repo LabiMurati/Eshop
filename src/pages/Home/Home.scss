@@ -190,6 +190,7 @@
       margin-left: 53px;
     }
     span {
+      width: 178px;
       position: absolute;
       margin-top: 262px;
       padding: 15px 25px;
@@ -199,10 +200,9 @@
       background-color: white;
       color: black;
       margin-left: 53px;
-    }
-    span:hover {
-      padding: 20px;
-      transition: all 0.2s ease-in-out;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
     }
   }
 }
