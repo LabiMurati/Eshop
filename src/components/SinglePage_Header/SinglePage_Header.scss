@@ -1,32 +1,29 @@
-.Header {
+.SinglePage_Header {
   width: 100%;
-  position: fixed;
-  z-index: 9;
-  left: 0;
-  top: 0;
+  border-bottom: 1px solid #e5e5e5;
   .logo {
-    width: 100px;
-    margin-top: 30px;
+    width: 90px;
   }
-  &__wrap {
+  .Header__wrap--another {
     width: 100%;
+    padding: 37px 0px 47px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-.nav_wrapper {
-  margin-top: 30px;
+.Another-nav_wrapper {
   ul {
     list-style: none;
     display: flex;
   }
   li {
-    margin-left: 25px;
+    margin-left: 72px;
   }
   a {
-    font-size: 16px;
-    color: white;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
   }

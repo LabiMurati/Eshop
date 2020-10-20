@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import * as API from './../../api/api';
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import './Singlepage.scss'
@@ -10,6 +11,7 @@ import slider2 from './../../assets/images/photo-slider_2.png';
 import slider3 from './../../assets/images/photo-slider_3.png';
 import slider4 from './../../assets/images/photo-slider_4.png';
 import singlepagebanner from './../../assets/images/singlepage-banner.png';
+import { SinglePage_Header } from '../../components/SinglePage_Header/SinglePage_Header';
 
 //Components
 const settingsFavorite = {
@@ -21,10 +23,44 @@ const settingsFavorite = {
     slidesToScroll: 4
 };
 
+export interface StateProps {
+    loading: boolean;
+    food?: API.Hints[],
+    error?: string;
+}
 
 export const Singlepage = () => {
+    const [state, setState] = useState<StateProps>({
+        loading: true,
+        food: [],
+        error: undefined
+    })
+
+    useEffect(() => {
+        loadFood();
+    })
+
+    const loadFood = async () => {
+        try {
+            const res = await API.getFood(
+
+            )
+            setState({
+                ...state,
+                loading: false,
+                food: res.data?.hints
+            })
+        } catch (error) {
+            setState({
+                ...state,
+                loading: false,
+                error: error.message
+            })
+        }
+    }
     return (
         <div className="singlepage">
+            <SinglePage_Header/>
             <div className="container">
                 <section className="block_section t-shirt">
                     <div className="text__area">
@@ -40,7 +76,7 @@ export const Singlepage = () => {
                             </div>
                         </div>
                 </section>
-                <section className="block_section favorite_section">
+                {/* <section className="block_section favorite_section">
                 <div className="container">
                     <div className="main_title">
                         <h4>Your Favorite</h4>
@@ -123,6 +159,88 @@ export const Singlepage = () => {
                             </div>
                         </Slider>
                     </div>
+                </div>
+            </section> */}
+            <section className="block_section favorite_section">
+                <div className="container">
+                    <div className="main_title">
+                        <h3>Your Favorite</h3>
+                    </div>
+                    {
+                        state.food?.slice(0, 1)?.map((foodItem: API.Hints) => {
+                            return (
+                                <div className="favorite_slider" key={foodItem.food.foodId}>
+                                    <Slider {...settingsFavorite}>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                        <div className="favorite_product_item">
+                                            <ProductBox isBig
+                                                id={foodItem.food.foodId}
+                                                title={foodItem.food.label}
+                                                price={foodItem.food.category}
+                                                image={foodItem.food.image}
+                                            />
+                                        </div>
+                                    </Slider>
+                                </div>
+                            )
+                        }
+                        )
+                    }
                 </div>
             </section>
                 <section className="subscribe">

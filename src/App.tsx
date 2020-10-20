@@ -7,7 +7,7 @@ import {
 
 //Components
 import { Footer } from './components/Footer/Footer';
-import { Header } from './components/Header/Header';
+// import { Header } from './components/Header/Header';
 
 //Pages
 import { Home } from './pages/Home/Home';
@@ -17,18 +17,19 @@ import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 //Styles
 import './App.scss';
 import { Singlepage } from './pages/Singlepage/Singlepage';
-import { ProductFilters } from './pages/Product Filters/ProductFilters';
+import { ProductFilters } from './pages/ProductFilters/ProductFilters'
+
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route  component={Singlepage} />
-          <Route  component={ProductFilters} />
+          <Route  exact path="/Singlepage" component={Singlepage} />
+          <Route exact path="/ProductFilters" component={ProductFilters} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer />

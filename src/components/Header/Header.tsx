@@ -11,7 +11,7 @@ export const Header = () => {
     const isHomePage = history.location.pathname === '/Singlepage'; 
 
     return (
-        <div className={`Header${isHomePage && ' Header--Home' }`}>
+        <div className="Header">
             <div className="container">
                 <div className="Header__wrap">
                     <Link to="/">

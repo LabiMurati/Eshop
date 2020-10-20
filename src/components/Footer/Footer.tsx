@@ -51,8 +51,9 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-        
-            <h5>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</h5>
+            <div className="footer__bottom">
+                <h5>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</h5>
+            </div>
         </div>
     )
 }
