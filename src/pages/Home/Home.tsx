@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import * as API from './../../api/api';
-
 //Components
     import { ProductBox } from '../../components/ProductBox/ProductBox';
     import { Header } from '../../components/Header/Header'
-
-
 //styles
 import './Home.scss'
 
@@ -23,9 +20,6 @@ import slider4 from './../../assets/images/photo-slider_4.png';
 import subscribe from '../../assets/images/blake-wisz-GFrBMipOd_E-unsplash.png';
 
 // stlyes
-
-
-
 const settingsBanner = {
     dots: false,
     nav: true,
@@ -134,91 +128,6 @@ export const Home = () => {
                     </div>
                 </div>
             </section>  
-            {/* <section className="block_section favorite_section">
-                <div className="container">
-                    <div className="main_title">
-                        <h4>Your Favorite</h4>
-                    </div>
-                    <div className="favorite_slider">
-                        <Slider {...settingsFavorite}>
-                            <div className="fav_product_slider_item">
-                                <Link to="/src/pages/Singlepage/">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider1}
-                                />
-                                </Link>
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider2}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider3}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider4}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider1}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider2}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider3}
-                                />
-                            </div>
-                            <div className="fav_product_slider_item">
-                                <ProductBox
-                                    id="1"
-                                    isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="$79.99"
-                                    image={slider4}
-                                />
-                            </div>
-                        </Slider>
-                    </div>
-                </div>
-            </section> */}
             <section className="block_section favorite_section">
                 <div className="container">
                     <div className="main_title">
@@ -230,12 +139,14 @@ export const Home = () => {
                                 <div className="favorite_slider" key={foodItem.food.foodId}>
                                     <Slider {...settingsFavorite}>
                                         <div className="favorite_product_item">
+                                            <Link to="/src/pages/Singlepage/Singlepage.tsx">
                                             <ProductBox isBig
                                                 id={foodItem.food.foodId}
                                                 title={foodItem.food.label}
                                                 price={foodItem.food.category}
                                                 image={foodItem.food.image}
                                             />
+                                            </Link>
                                         </div>
                                         <div className="favorite_product_item">
                                             <ProductBox isBig

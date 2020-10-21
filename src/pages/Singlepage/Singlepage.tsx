@@ -177,6 +177,7 @@ export const Singlepage = () => {
                                                 title={foodItem.food.label}
                                                 price={foodItem.food.category}
                                                 image={foodItem.food.image}
+
                                             />
                                         </div>
                                         <div className="favorite_product_item">
